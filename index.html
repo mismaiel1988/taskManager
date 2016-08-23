@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+  </head>
+  <body>
+
+    <div>
+      <div class="container">
+        <div id="animate">
+          <h1>Maya's To-Do List</h1>
+        </div>
+        <hr>
+      </div>
+
+      <label for="add" class="label-add"> New Task: </label>
+      <input id="task" type="text">
+      <button id="add">Add</button>
+    
+      <h3>To Do: </h3>
+      <form action="save.php" method="get">
+        <ul id="todos"></ul>
+        <button type="submit">Save</button>
+      </form>
+
+      <hr>
+
+      <h3> Completed: </h3>
+
+      <ul class="completed"></ul>
+    </div>
+  </body>
+</html>
